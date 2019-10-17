@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.S19020DA62.personalbudget.AddCatagoriesActivity">
+    <item
+        android:id="@+id/action_addExpense"
+        android:orderInCategory="100"
+        android:title="Add Daily Expense"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_allItems"
+        android:orderInCategory="100"
+        android:title="All Items"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search "
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_chart"
+        android:orderInCategory="100"
+        android:title="Expenses Chart"
+        app:showAsAction="never" />
+
+</menu>

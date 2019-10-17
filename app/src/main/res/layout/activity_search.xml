@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgforbudget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+
+    <Spinner
+        android:id="@+id/slecet_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:prompt="@string/message" />
+
+    <TextView
+        android:id="@+id/textvi"
+        android:textColor="@color/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Range"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/switch_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textvi"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:textColor="@color/colortext"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textvi"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:text="Select Date" />
+
+    <EditText
+        android:textColor="@color/colortext"
+        android:id="@+id/inputStartDate"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn"
+        android:editable="false"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:text="start date" />
+
+    <EditText
+        android:textColor="@color/colortext"
+        android:id="@+id/inputEndtDate"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btn"
+        android:layout_marginEnd="26dp"
+        android:text="end Date"
+        android:editable="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp" />
+
+    <ListView
+        android:id="@+id/list_items"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_below="@+id/inputStartDate"
+        android:layout_marginTop="15dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn"
+        android:layout_alignTop="@+id/btn_search"
+        android:text="total=500"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/btn" />
+    <Button
+        android:textSize="16sp"
+        android:background="@drawable/buttonbg"
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Search"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="136dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="130dp" />
+
+
+</RelativeLayout>

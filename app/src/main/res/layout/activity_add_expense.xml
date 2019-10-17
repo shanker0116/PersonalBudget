@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgforbudget"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpenseActivity"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_catagories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/message"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txttotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="2dp">
+
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/roundedittext"
+            android:id="@+id/input_itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:hint=" Name of Item" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="2dp">
+
+        <EditText
+            android:id="@+id/input_itemAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedittext"
+            android:inputType="text"
+            android:textSize="25sp"
+            android:hint=" Amount " />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="2dp">
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/roundedittext"
+            android:id="@+id/input_itemRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:inputType="text"
+            android:textSize="22dp"
+            android:hint=" Remarks " />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+
+        android:background="@drawable/buttonbg"
+        android:padding="10dp"
+        android:id="@+id/btn_add_expense"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Add Expense" />
+
+
+
+</LinearLayout>

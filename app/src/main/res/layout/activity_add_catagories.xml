@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgforbudget"
+    tools:context=".AddCatagoriesActivity">
+    <ImageView
+        android:src="@drawable/moenthybudget"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:contentDescription="TODO" />
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="2dp">
+
+        <EditText
+
+            android:id="@+id/input_catagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="New catagory"
+            android:padding="10dp"
+            android:background="@drawable/roundedittext"
+            android:inputType="text"
+            android:textSize="25sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/buttonbg"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_add_catagory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Catagory"
+        android:textColor="@color/colortext"
+        android:textSize="20sp" />
+
+</LinearLayout>
